@@ -1,0 +1,40 @@
+{
+ "menu":[{
+     "breackfast":[
+         {"cafe americano": 500},
+         {"cafe con leche": 700},
+         {"sandwich jamon queso": 1000},
+         {"jugo natural": 700}
+
+     ],
+     "lunch": [
+         {"hamburguesas":[
+             {"simple": 1500},
+             {"doble": 2500},
+             {"types":[
+                 "res",
+                 "pollo",
+                 "veggie"
+             ]},
+             {"extras":{
+                 "queso": 500,
+                 "huevo": 500
+             }}
+         ]},
+         {"acompañamientos":[
+            {"papas fritas": 500},
+            {"onion rings": 500}
+         ]},
+         {"bebidas":[
+             {"agua":[
+               {"500ml": 500},
+               {"750ml": 800}
+             ]},
+             {"gaseosas":[
+                 {"500ml": 700},
+                 {"750ml": 1000}
+             ]}
+         ]}
+     ]
+ }]
+}
