@@ -1,18 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import List from './components/list'
-import './components/list.css'
-import OptionsMenu from "./components/option-menu"
-import menu from './data/menu.json'
+import Routes from './Routes/Routes.js'
 
-function App() {
-  return (
-    <div className="App">
-         <OptionsMenu title="hola mundo"/>
-      <h1>hola</h1>
-      <List /> 
-    </div>
-  );
-}
+
+
+function App (){
+  
+    return(
+      
+     <Routes/>
+
+    )
+  }
+
 export default App;

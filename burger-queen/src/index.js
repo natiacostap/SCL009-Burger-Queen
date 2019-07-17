@@ -2,13 +2,13 @@ import 'materialize-css/dist/css/materialize.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './one page/navbar.css'
-import Navbar from './one page/navbar.js'
+import './components/Navbar/navbar.css'
+import App from './App.js'
 import * as serviceWorker from './serviceWorker';
-//import Demo from './nabvar.js';
+// Browser Router
+import  { BrowserRouter} from 'react-router-dom'
 
-//ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<Navbar />, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter><App/></BrowserRouter>, document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change
