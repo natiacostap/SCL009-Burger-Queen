@@ -1,0 +1,26 @@
+{
+  "name": "scl009-burger-queen",
+  "version": "1.0.0",
+  "description": "app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natiacostap/SCL009-Burger-Queen.git"
+  },
+  "keywords": [
+    "burguer",
+    "queen",
+    "order",
+    "react",
+    "app"
+  ],
+  "author": "alejandra, laura, natalia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natiacostap/SCL009-Burger-Queen/issues"
+  },
+  "homepage": "https://github.com/natiacostap/SCL009-Burger-Queen#readme"
+}

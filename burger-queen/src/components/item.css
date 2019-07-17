@@ -1,0 +1,14 @@
+div.delete-icon {
+  text-align: center;
+}
+div.item-text {
+  font-style: italic;
+}
+button.delete-btn {
+  background: #f04141;
+  border-radius: 5px;
+  padding: 3px 6px; 
+  font-size: 14px;
+  border: none;
+  color: #ffffff
+}

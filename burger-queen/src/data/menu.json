@@ -1,0 +1,83 @@
+{
+ "menu": {
+    "breakfast": [{
+				"item": "cafe americano",
+				"price": 500
+			},
+			{
+				"item": "cafe con leche",
+				"price": 700
+			},
+			{
+				"item": "sandwich jamon queso",
+				"price": 1000
+			},
+			{
+				"item": "jugo natural",
+				"price": 700
+			}
+		],
+    "lunch": {
+			"hamburguers": {
+				"options": [
+					{
+						"item": "hamburguesa simple",
+						"price": 1500,
+						"types":[
+							"res",
+							"pollo",
+							"veggie"
+						]
+					},
+					{
+						"item": "hamburguesa doble",
+						"price": 2500,
+						"types":[
+							"res",
+							"pollo",
+							"veggie"
+						]
+					}
+				],
+				"extras": [
+					{
+						"item": "queso",
+						"price": 500
+					},
+					{
+						"item": "huevo",
+						"price": 500
+					}
+				]
+			},
+			"others": [
+				{
+					"item": "papas fritas",
+					"price": 500
+				},
+				{
+					"item": "aros de cebolla",
+					"price": 500
+				}
+			],
+			"drinks": [
+				{
+					"item": "agua 500",
+					"price": 500
+				},
+				{
+					"item": "agua 750",
+					"price": 800
+				},
+				{
+					"item": "gaseosa 500",
+					"price": 700
+				},
+				{
+					"item": "gaseosa 750",
+					"price": 1000
+				}
+			]
+		}
+	}
+}
