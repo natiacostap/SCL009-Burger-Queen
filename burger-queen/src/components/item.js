@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './item.css'
+import 'materialize-css/dist/css/materialize.min.css';
+
 //Creamos componente para lista de precios
 class Item extends Component {
   //Método render para mostrar en pantalla, retorna la interfaz (html)
   render() {
     return (
-      <div>
+      <div className="item-container">
         <div className="row">
           <div className="col s9 item-text">{this.props.name}</div>
           <div className="col s1">1</div>

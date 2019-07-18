@@ -2,8 +2,17 @@ import React, { Component } from 'react';
 import Item from './item'
 import { menu } from '../data/menu'
 import './list.css';
+import 'materialize-css/dist/css/materialize.min.css';
 
 class List extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      items: []
+    }
+  }
+
   render() {
     return (
       <div className="list-container">
@@ -18,21 +27,8 @@ class List extends Component {
         </div>
 
         <div className="row">
-          <div className="items-list">
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
-            <Item name={menu.breakfast[1].item}/>
+          <div className="col s12 items-list">
+            {this.state.items}
           </div>
         </div>
 

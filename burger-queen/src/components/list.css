@@ -2,6 +2,7 @@ div.list-container {
   height: 500px;
   width: 350px;
   color: #ffffff !important;
+  background-color: #659CB4;
   border-radius: 20px;
 }
 
@@ -32,10 +33,7 @@ div.items-list {
   width: 347px;
   overflow: auto;
   background-color: #659CB4;
-  padding: 0 5px;
-}
-div.list-container {
-  background-color: #659CB4;
+  padding: 0px;
 }
 div.name-container {
   background-color: #40B4E6;
