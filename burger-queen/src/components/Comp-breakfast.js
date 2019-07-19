@@ -14,7 +14,7 @@ class OptionsBreakfast extends Component {
 
              <div className="row">
              <div className="col s6">
-             <button className="btn">Sandwich Jamon Queso</button>
+             <button className="btn">Sandwich Jamon Queso </button>
              <button className="btn">Jugo Natural</button>
             </div>
             </div>
