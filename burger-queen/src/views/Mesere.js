@@ -11,23 +11,25 @@ class Mesere extends Component{
          <div className="header">
              <Navbar/>
          </div>
+         
+        
+         <div className ="body">
          <div className= "row">
            <div className="col s6">
            <OptionsMenu/>
+           <OptionsLunch/>
         </div>
-        <div className= "row">
-         <div className="col s12">
-             <OptionsLunch/>
+       
+         <div className="col s6">
+           <List/>  
          </div>
-         </div>
-         <div className ="body">
-            <div className="col s12">
-        
-            </div>
+         
+                  
         </div>
-         </div>
-         </div>  
-
+        </div>
+        </div>
+         
+       
         )
     }
 
