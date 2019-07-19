@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import List from '../components/list.js'
-import Navbar from '../components/Navbar/navbar.js'
-import OptionsMenu from '../components/option-menu.js';
-
+import List from '../components/Comp-list.js'
+import Navbar from '../components/Navbar/Comp-navbar.js'
+import OptionsMenu from '../components/Comp-menu.js';
+import OptionsLunch from '../components/Comp-lunch.js'
 
 class Mesere extends Component{
     render(){
@@ -11,11 +11,20 @@ class Mesere extends Component{
          <div className="header">
              <Navbar/>
          </div>
-         <div>
-          <OptionsMenu/>
+         <div className= "row">
+           <div className="col s6">
+           <OptionsMenu/>
+        </div>
+        <div className= "row">
+         <div className="col s12">
+             <OptionsLunch/>
          </div>
-         <div className ="boduBurger">
-             <List/>
+         </div>
+         <div className ="body">
+            <div className="col s12">
+        
+            </div>
+        </div>
          </div>
          </div>  
 

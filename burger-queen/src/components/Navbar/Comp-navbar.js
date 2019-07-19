@@ -19,9 +19,9 @@ function Navbar () {
     </Link>
     
     
-    <button className="btn waves-effect waves-light col s4 cocina" type="submit" name="action">Cocina </button>
+    <button className="btn waves-effect waves-light col s4 cocina" name="action">Cocina </button>
    
-    <button className="btn  col s4 flow-text pedidos"   type="submit" name="action">Pedidos</button>
+    <button className="btn  col s4 flow-text pedidos"  name="action">Pedidos</button>
      
     </div>  
  

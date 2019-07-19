@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Item from './item'
+import Item from './Comp-item'
 import { menu } from '../data/menu'
 import './list.css';
 import 'materialize-css/dist/css/materialize.min.css';
