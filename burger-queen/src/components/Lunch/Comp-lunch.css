@@ -8,23 +8,19 @@
     line-height: 2px;
     border-radius: 15px;
 }
-.optionMenu{
-    background-color:#40B4E6;
-    margin: 2px;
 
-}
 .Enviar{
     background-color: #C8117E;
     
 }
 .Hambur{
-    background-color:#40B4E6;
-    color:#ffff;
-    line-height: 2px;
-    width: 231px;
-    height: 120px;
-    border-radius: 15px;
-    
-
+	background-color:#40B4E6;
+	color:#ffff;
+	line-height: 2px;
+	width: 231px;
+	height: 120px;
+	border-radius: 15px;
 }
-
+.btn-container {
+	padding: 5px;
+}
