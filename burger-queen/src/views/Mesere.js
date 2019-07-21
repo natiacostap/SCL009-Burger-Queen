@@ -17,12 +17,10 @@ class Mesere extends Component{
          <div className= "row">
            <div className="col s6">
            <OptionsMenu/>
-           <OptionsLunch/>
+           
         </div>
        
-         <div className="col s6">
-           <List/>  
-         </div>
+        
          
                   
         </div>
