@@ -1,8 +1,14 @@
 div.delete-icon {
   text-align: center;
 }
-div.item-text {
+.item-text {
   font-style: italic;
+  text-align: left;
+  padding-left: 20px !important;
+  color: #ffffff !important;
+}
+.count-text {
+  color: #ffffff !important;
 }
 button.delete-btn {
   background: #f04141;
@@ -11,4 +17,7 @@ button.delete-btn {
   font-size: 14px;
   border: none;
   color: #ffffff
+}
+.item-container {
+  text-align: center
 }

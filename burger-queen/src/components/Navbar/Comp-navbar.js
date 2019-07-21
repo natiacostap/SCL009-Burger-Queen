@@ -1,44 +1,28 @@
-import 'materialize-css/dist/css/materialize.min.css';
 import React from 'react';
-import './navbar.css'
-import {Link} from 'react-router-dom';// aqui llamamos a Link que nos conecta con Route.js 
-
+import './Comp-navbar.css';
+import { Link } from 'react-router-dom'; // aqui llamamos a Link que nos conecta con Route.js 
 
 function Navbar () {
+  return (
+    <div className="container-fluid">
+      <div className="row"> 
+        <div className="col-4 nav-container">
+          <Link to="/mesere">
+            <button className="btn navbar-btn mesere" name="action">Mesere</button>
+          </Link>
+        </div>
+        <div className="col-4 nav-container">
+          <button className="btn navbar-btn cocina" name="action">Cocina</button>
+        </div>
+        <div className="col-4 nav-container">
+          <button className="btn navbar-btn pedidos" name="action">Pedidos</button>
+        </div>
+      </div>  
+    </div>	
+  )
+};
 
-     return (
-     
-      <div>
-     <div className="row"> 
-     
-     <Link to="/mesere">
-    <button 
-    className="btn waves-effect waves-light col s4 mesere"  
-    name="action">Mesere 
-    </button>
-    </Link>
-    
-    
-    <button className="btn waves-effect waves-light col s4 cocina" name="action">Cocina </button>
-   
-    <button className="btn  col s4 flow-text pedidos"  name="action">Pedidos</button>
-     
-    </div>  
- 
-       <div className="fondo">
-         
-        
-       </div> 
-      
-       </div>
-      
-      
-         
-     );
-  }
-
-  
-  export default Navbar;
+export default Navbar;
 
 
 

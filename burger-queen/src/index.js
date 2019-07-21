@@ -1,8 +1,8 @@
-import 'materialize-css/dist/css/materialize.min.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './components/Navbar/navbar.css'
+import './components/Navbar/Comp-navbar.css'
 import App from './App.js'
 import * as serviceWorker from './serviceWorker';
 // Browser Router

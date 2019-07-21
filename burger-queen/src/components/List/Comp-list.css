@@ -1,41 +1,54 @@
 div.list-container {
   height: 500px;
-  width: 350px;
   color: #ffffff !important;
+  background-color: #659CB4;
   border-radius: 20px;
 }
 
 div.client-container {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 5.5%;
+  margin-bottom: 5.5%;
+}
+.input-container {
+  padding-left: 0 !important;
 }
 input.input-name {
+  margin-top: 5.5%;
+  margin-bottom: 5.5%;
   font-style: italic !important;
   color: #ffffff !important;
   background-color: #659CB4 !important;
-  padding-left: 5px !important; 
-  width: 285px !important;
+  width: 100%;
 }
 ::placeholder {
-  color: #ffffff
+  color: #ffffff !important;
 }
 
 i.client-icon {
   font-size: 100%;
-  line-height: 5 !important;
 }
-h5.total-price {
+.price-container {
+  margin-top: 5.5%;
+  margin-bottom: 5.5%; 
+}
+.total-text {
   margin-top: 5px;
   margin-bottom: 0;
+  text-align: right;
+}
+h5.total-price {
+  margin-top: 2px;
+  margin-bottom: 0;
+  text-align: center;
 }
 div.items-list {
   height: 330px;
-  width: 347px;
   overflow: auto;
   background-color: #659CB4;
-  padding: 0 5px;
-}
-div.list-container {
-  background-color: #659CB4;
+  padding: 0px;
 }
 div.name-container {
   background-color: #40B4E6;
