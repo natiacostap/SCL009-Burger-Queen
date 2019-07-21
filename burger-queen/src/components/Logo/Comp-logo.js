@@ -1,7 +1,6 @@
 
-import 'materialize-css/dist/css/materialize.min.css';
 import React from 'react';
-import './Navbar/navbar.css'
+import '../Navbar/Comp-navbar.css'
 function Img(){
   
     return(

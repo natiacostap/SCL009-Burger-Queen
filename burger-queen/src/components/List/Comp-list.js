@@ -1,0 +1,53 @@
+import React, { Component } from 'react';
+import Item from '../Item/Comp-item'
+import { menu } from '../../data/menu'
+import './Comp-list.css';
+
+class List extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      items: []
+    }
+  }
+
+  render() {
+    return (
+      <div className="container list-container">
+        <div className="row name-container">
+
+          <div className="col-2 client-container">
+            <i className="fas fa-user-alt client-icon"></i>
+          </div>
+          <div className="col-10 input-container">
+            <input className="input-name form-control" type="text" placeholder="Nombre del cliente"/>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-12">
+            <div className="items-list">
+              <table className="table table-borderless">
+                <tbody>
+                  <Item name="Café" count="1"/>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div className="row price-container">
+          <div className="col-2 offset-5">
+            <h6 className="total-text">Total:</h6>
+          </div>
+          <div className="col-5">
+            <h5 className="total-price">$ 100.000</h5>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default List

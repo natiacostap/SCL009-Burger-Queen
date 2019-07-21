@@ -1,35 +1,27 @@
 import React, {Component} from 'react';
-import List from '../components/Comp-list.js'
+import List from '../components/List/Comp-list.js'
 import Navbar from '../components/Navbar/Comp-navbar.js'
-import OptionsMenu from '../components/Comp-menu.js';
-import OptionsLunch from '../components/Comp-lunch.js'
+import Menu from '../components/Menu/Comp-menu.js';
 
 class Mesere extends Component{
-    render(){
-        return(
-         <div className="mesereView"> 
-         <div className="header">
-             <Navbar/>
-         </div>
-         
-        
-         <div className ="body">
-         <div className= "row">
-           <div className="col s6">
-           <OptionsMenu/>
-           
-        </div>
-       
-        
-         
-                  
-        </div>
-        </div>
-        </div>
-         
-       
-        )
-    }
-
+	render() {
+		return (
+			<div className="mesereView"> 
+				<div className="header">
+					<Navbar/>
+				</div>
+				<div className ="container">
+					<div className= "row">
+						<div className="col-12 col-md-6">
+							<Menu/>
+						</div>
+						<div className="col-12 col-md-6">
+							<List/>
+						</div>
+					</div>
+				</div>
+			</div>
+		)
+	}
 }
 export default Mesere;

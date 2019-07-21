@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { menu } from "../data/menu.json";
+/* import React, { Component } from 'react';
+import { menu } from "../../data/menu.json";
 
 class OptionsMenu extends Component {
   constructor() {
@@ -16,7 +16,7 @@ class OptionsMenu extends Component {
         </button>   
       )
     })
-
+    
     const burgerData = this.state.menu.lunch.hamburgers.options.map((item) => {
       return (
         <button onClick="" className="btn-large">
@@ -25,7 +25,6 @@ class OptionsMenu extends Component {
       )
     })
 
-    
     return (
       <div>
         { breakfastData }
@@ -35,4 +34,4 @@ class OptionsMenu extends Component {
   }
 }
 
-export default OptionsMenu
+export default OptionsMenu */

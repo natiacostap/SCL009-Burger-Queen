@@ -1,7 +1,6 @@
 import React from 'react';
-import 'materialize-css/dist/css/materialize.min.css';
 import Navbar from '../components/Navbar/Comp-navbar.js'
-import Img from '../components/Comp-logo.js'
+import Img from '../components/Logo/Comp-logo.js'
 
 
 function Home (){
