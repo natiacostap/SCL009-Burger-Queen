@@ -19,7 +19,39 @@ function Navbar () {
 	);
 };
 
-export default Navbar;
+     return (
+     
+      <div>
+     <div className="row"> 
+     
+     <Link to="/mesere">
+    <button 
+    className="btn waves-effect waves-light col s4 mesere"  
+    name="action">Mesere 
+    </button>
+    </Link>
+    
+    
+    <button className="btn waves-effect waves-light col s4 cocina" name="action">Cocina </button>
+   
+    <button className="btn  col s4 flow-text pedidos"  name="action">Pedidos</button>
+     
+    </div>  
+ 
+       <div className="fondo">
+         
+        
+       </div> 
+      
+       </div>
+      
+      
+         
+     );
+  }
+
+  
+  export default Navbar;
 
 
 

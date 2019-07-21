@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Item from './item'
+import Item from './Comp-item'
 import { menu } from '../data/menu'
 import './list.css';
 import 'materialize-css/dist/css/materialize.min.css';
@@ -15,8 +15,10 @@ class List extends Component {
 
   render() {
     return (
+      
       <div className="list-container">
-        <div className="row name-container">
+        <div className="row"> 
+        <div className="name-container">
           <div className="col s1 client-container">
             <i className="fas fa-user-alt client-icon"></i>
           </div>
@@ -25,10 +27,24 @@ class List extends Component {
           </div>
           
         </div>
+        </div>
 
         <div className="row">
-          <div className="col s12 items-list">
-            {this.state.items}
+          <div className="items-list">
+            <Item name={menu.breakfast[2].item}/>
+            <Item name={menu.breakfast[1].item}/>
+            <Item name={menu.breakfast[1].item}/>
+            <Item name={menu.breakfast[1].item}/>
+            <Item name={menu.breakfast[1].item}/>
+            <Item name={menu.breakfast[1].item}/>
+            <Item name={menu.breakfast[1].item}/>
+            <Item name={menu.breakfast[1].item}/>
+            <Item name={menu.breakfast[1].item}/>
+            <Item name={menu.breakfast[1].item}/>
+            <Item name={menu.breakfast[1].item}/>
+            <Item name={menu.breakfast[1].item}/>
+            <Item name={menu.breakfast[1].item}/>
+            <Item name={menu.breakfast[1].item}/>
           </div>
         </div>
 

@@ -17,8 +17,8 @@
 				"price": 700
 			}
 		],
-    "lunch": {
-			"hamburgers": {
+    "lunch": [{
+			"hamburguers": {
 				"options": [
 					{
 						"item": "hamburguesa simple",
@@ -79,5 +79,6 @@
 				}
 			]
 		}
+	]
 	}
 }
