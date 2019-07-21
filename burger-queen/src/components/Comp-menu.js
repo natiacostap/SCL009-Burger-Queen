@@ -1,16 +1,45 @@
 import React, { Component } from 'react';
 import './Lunch-menu.css';
+import OptionsLunch from './Comp-lunch.js'
+import OptionBreakfast from './Comp-breakfast.js'
 
 class OptionsMenu extends Component {
+    constructor(){
+        super()
+        this.state={
+            showButton:true
+        }
+
+        
+    }
+    hideLunch(){
+        this.setState({
+            showButton:true
+        })
+    }
+
+    hideBreakfast(){
+         this.setState({
+             showButton:false
+         })
+    }
      render(){
          return(
+             <div>
              <div className="row">
-               <div className="col s6">
-               <button className=" optionMenu btn-large">Desayuno</button>
-               </div>
-               <div className="col s6">
-               <button className="optionMenu btn-large">NO Desayuno</button>
-               </div>
+               
+               <button className=" optionMenu btn-large" onClick={()=>this.hideLunch()}>Desayuno</button>
+                           
+               <button className="optionMenu btn-large"onClick={()=>this.hideBreakfast()}>NO Desayuno</button>
+               
+             </div>
+             <div className="row">
+                 {
+                     this.state.showButton?/**si es verdadero imprime optionbreakfast y si no lo es el de Lunch */
+                     <OptionBreakfast/>
+                     :<OptionsLunch/>
+                 }
+             </div>
              </div>
          )
      }

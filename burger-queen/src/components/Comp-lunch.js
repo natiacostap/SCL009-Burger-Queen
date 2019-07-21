@@ -5,46 +5,36 @@ class OptionsLunch extends Component {
 
      render(){
          return(
-           <div>
-            <div className="row">
-            <div className="col 6">
-             <button className="Hambur"><p>Hamburguesa</p> Simple 🍔</button>
-             </div>
-             <div className="col s2">
-             <button className="Menu"><p>Res</p> 🍖</button>
-             </div>
-             <div className="col s2">
-             <button className="Menu"><p>Pollo</p> 🐔 </button>
-             </div>
-             <div className="col s2">
-             <button className="Menu"><p>Veggie</p> 🍅</button>
-             </div>
+    <div className="container">
+         <div className="row">
+             
+               <button className="Hambur"><p>Hamburguesa</p> Simple 🍔</button>
              
              
-             </div>
-             <div className="row">
-            <div className="col s6">
-             <button className="Hambur"><p>Hamburguesa</p> Doble 🍔🍔</button>
-             </div>
-             <div className="col s2">
-             <button className="Menu">
-             <p>Queso</p>
-              🧀
-              
-             </button>
-             </div>
-             <div className="col s2">
-             <button className="Menu">Huevo</button>
-             </div>
-             <div className="col s2">
-             <button className="Enviar Menu"><p>Enviar</p>✅</button>
-             </div>
+               <button className="Menu"><p>Res</p> 🍖</button>
+                       
+               <button className="Menu"><p>Pollo</p> 🐔 </button>
+                        
+               <button className="Menu"><p>Veggie</p> 🍅</button>
+           
              
+         </div>
 
-
-            </div>
-            </div>
+         <div className="row">
+           
+              <button className="Hambur"><p>Hamburguesa</p> Doble 🍔🍔</button>
+                        
+             <button className="Menu"><p>Queso</p>🧀</button>
             
+             <button className="Menu">Huevo</button>
+           
+              <button className="Enviar Menu"><p>Enviar</p>✅</button>
+   
+         
+        </div>
+    
+     </div>
+          
          )
      }
     }

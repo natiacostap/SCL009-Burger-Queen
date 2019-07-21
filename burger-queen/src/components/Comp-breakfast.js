@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './breakfast.css'
+import './Lunch-menu.css';
 
-class OptionsBreakfast extends Component {
+class OptionBreakfast extends Component {
      render(){
          return(
            <div>
@@ -23,4 +23,4 @@ class OptionsBreakfast extends Component {
          )
      }
     }
-export default OptionsBreakfast
+export default OptionBreakfast
