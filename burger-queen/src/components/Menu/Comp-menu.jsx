@@ -4,8 +4,8 @@ import OptionsLunch from '../Lunch/Comp-lunch'
 import OptionBreakfast from '../Breakfast/Comp-breakfast'
 
 class OptionsMenu extends Component {
-	constructor(){
-		super()
+	constructor(props){
+		super(props)
 		this.state = {
 			showButton: true
 		}

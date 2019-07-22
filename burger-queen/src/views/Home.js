@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Comp-navbar.js'
+import Navbar from '../components/Navbar/Comp-navbar.jsx'
 import Img from '../components/Logo/Comp-logo.js'
 
 
@@ -10,7 +10,6 @@ function Home (){
       <div className="Burger">
         <div className="header">
          <Navbar/>
-        
         </div>
         <div className="bodyBurger">
         <Img/>

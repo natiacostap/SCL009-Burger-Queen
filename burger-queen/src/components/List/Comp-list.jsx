@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Item from '../Item/Comp-item'
-import { menu } from '../../data/menu'
 import './Comp-list.css';
 
 class List extends Component {

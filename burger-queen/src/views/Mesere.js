@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import List from '../components/List/Comp-list.js'
-import Navbar from '../components/Navbar/Comp-navbar.js'
-import Menu from '../components/Menu/Comp-menu.js';
+import List from '../components/List/Comp-list.jsx'
+import Navbar from '../components/Navbar/Comp-navbar.jsx'
+import Menu from '../components/Menu/Comp-menu.jsx';
 
 class Mesere extends Component{
 	render() {
