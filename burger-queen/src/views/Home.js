@@ -1,7 +1,6 @@
 import React from 'react';
-import 'materialize-css/dist/css/materialize.min.css';
-import Navbar from '../components/Navbar/Comp-navbar.js'
-import Img from '../components/Comp-logo.js'
+import Navbar from '../components/Navbar/Comp-navbar.jsx'
+import Img from '../components/Logo/Comp-logo.js'
 
 
 function Home (){
@@ -11,7 +10,6 @@ function Home (){
       <div className="Burger">
         <div className="header">
          <Navbar/>
-        
         </div>
         <div className="bodyBurger">
         <Img/>
