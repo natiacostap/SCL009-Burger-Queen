@@ -10,7 +10,7 @@ class OptionBreakfast extends Component {
 				<div className="row">
 						{menu.menu.breakfast.map((el =>
 						<div className="btn-container col-6">
-						<Button img="☕ + 🥛" item={el.item} price={el.price} key={el.item}/>
+						<Button img={el.img} item={el.item} price={el.price} key={el.item} addToList={this.props.addToList}/>
 						</div>
 						//console.log(el.item, el.price)
 						))}

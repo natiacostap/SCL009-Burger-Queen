@@ -21,49 +21,59 @@
 			"hamburgers": [
 					{
 						"item": "hamburguesa simple res",
-						"price": 1500
+						"price": 1500,
+						"img":"🍔"
 						
 					},
 					{
 						"item": "hamburguesa simple pollo",
-						"price": 1500
+						"price": 1500,
+						"img":"🍔 "
+
 						
 					},
 					{
 						"item": "hamburguesa simple veggie",
-						"price": 1500
+						"price": 1500,
+						"img":"🍔 "
 						
 					},
 					{
 						"item": "hamburguesa doble res",
-						"price": 2500
+						"price": 2500,
+						"img":"🍔 🍔 "
 						
 					},
 					{
 						"item": "hamburguesa doble pollo",
-						"price": 2500
+						"price": 2500,
+						"img":"🍔 🍔 "
 						
 					},{
 						"item": "hamburguesa doble veggie",
-						"price": 2500
+						"price": 2500,
+						"img":"🍔 🍔 "
 						
 					}
 				],
 				"extras": [
 					{
 						"item": "queso",
-						"price": 500
+						"price": 500,
+						"img":"🧀"
 					},
 					{
 						"item": "huevo",
-						"price": 500
+						"price": 500,
+						"img":""
 					}
 				]
 			,
 			"others": [
 				{
 					"item": "papas fritas",
-					"price": 500
+					"price": 500,
+					"img":"🍟"
 				},
 				{
 					"item": "aros de cebolla",
@@ -73,15 +83,18 @@
 			"drinks": [
 				{
 					"item": "agua 500",
-					"price": 500
+					"price": 500,
+					"img":"🥛"
 				},
 				{
 					"item": "agua 750",
-					"price": 800
+					"price": 800,
+					"img":"🥛"
 				},
 				{
 					"item": "gaseosa 500",
-					"price": 700
+					"price": 700,
+					"img":""
 				},
 				{
 					"item": "gaseosa 750",

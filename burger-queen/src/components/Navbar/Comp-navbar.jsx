@@ -6,18 +6,25 @@ function Navbar () {
   return (
     <div className="container-fluid">
       <div className="row"> 
-        <div className="col-4 nav-container">
+      <div className="col-3 nav-container">
+        <Link to="/">
+        <button className="btn navbar-btn Home" name="action">Home</button>
+        </Link>
+        </div>  
+        <div className="col-3 nav-container">
           <Link to="/mesere">
             <button className="btn navbar-btn mesere" name="action">Mesere</button>
           </Link>
         </div>
-        <div className="col-4 nav-container">
+        <div className="col-3 nav-container">
           <button className="btn navbar-btn cocina" name="action">Cocina</button>
         </div>
-        <div className="col-4 nav-container">
+        <div className="col-3 nav-container">
           <button className="btn navbar-btn pedidos" name="action">Pedidos</button>
         </div>
-      </div>  
+        
+     
+    </div>	
     </div>	
   )
 };
