@@ -4,12 +4,7 @@ import './Comp-list.css';
 
 class List extends Component {
 
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     items: []
-  //   }
-  // }
+  
 
   render() {
     return (
@@ -29,8 +24,7 @@ class List extends Component {
             <div className="items-list">
               <table className="table table-borderless">
                 <tbody>
-                  {this.props.list.map(el=> <Item name={el.item} price={el.price} count={el.quantity} />
-                  )}
+                  {this.props.list.map(el=><Item name={el.item} price={el.price} count={el.quantity}/>)}
                 </tbody>
               </table>
             </div>

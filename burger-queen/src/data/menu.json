@@ -27,34 +27,61 @@
 					{
 						"item": "hamburguesa simple res",
 						"price": 1500,
+<<<<<<< HEAD
 						"img": "🍔"
+=======
+						"img":"🍔"
+>>>>>>> a86ba743e71f82910eb4f79f3dfc726bf0fbe955
 						
 					},
 					{
 						"item": "hamburguesa simple pollo",
 						"price": 1500,
+<<<<<<< HEAD
 						"img": "🍔"
+=======
+						"img":"🍔 "
+
+						
+>>>>>>> a86ba743e71f82910eb4f79f3dfc726bf0fbe955
 					},
 					{
 						"item": "hamburguesa simple veggie",
 						"price": 1500,
+<<<<<<< HEAD
 						"img": "🍔"
+=======
+						"img":"🍔 "
+						
+>>>>>>> a86ba743e71f82910eb4f79f3dfc726bf0fbe955
 					},
 					{
 						"item": "hamburguesa doble res",
 						"price": 2500,
+<<<<<<< HEAD
 						"img": "🍔🍔"
+=======
+						"img":"🍔 🍔 "
+>>>>>>> a86ba743e71f82910eb4f79f3dfc726bf0fbe955
 						
 					},
 					{
 						"item": "hamburguesa doble pollo",
 						"price": 2500,
+<<<<<<< HEAD
 						"img": "🍔🍔"
+=======
+						"img":"🍔 🍔 "
+>>>>>>> a86ba743e71f82910eb4f79f3dfc726bf0fbe955
 						
 					},{
 						"item": "hamburguesa doble veggie",
 						"price": 2500,
+<<<<<<< HEAD
 						"img": "🍔🍔"
+=======
+						"img":"🍔 🍔 "
+>>>>>>> a86ba743e71f82910eb4f79f3dfc726bf0fbe955
 						
 					}
 				],
@@ -62,12 +89,20 @@
 					{
 						"item": "queso",
 						"price": 500,
+<<<<<<< HEAD
 						"img": "🧀"
+=======
+						"img":"🧀"
+>>>>>>> a86ba743e71f82910eb4f79f3dfc726bf0fbe955
 					},
 					{
 						"item": "huevo",
 						"price": 500,
+<<<<<<< HEAD
 						"img": ""
+=======
+						"img":""
+>>>>>>> a86ba743e71f82910eb4f79f3dfc726bf0fbe955
 					}
 				]
 			,
@@ -75,7 +110,11 @@
 				{
 					"item": "papas fritas",
 					"price": 500,
+<<<<<<< HEAD
 					"img": "🍟"
+=======
+					"img":"🍟"
+>>>>>>> a86ba743e71f82910eb4f79f3dfc726bf0fbe955
 				},
 				{
 					"item": "aros de cebolla",
@@ -87,17 +126,29 @@
 				{
 					"item": "agua 500",
 					"price": 500,
+<<<<<<< HEAD
 					"img": "🌊"
+=======
+					"img":"🥛"
+>>>>>>> a86ba743e71f82910eb4f79f3dfc726bf0fbe955
 				},
 				{
 					"item": "agua 750",
 					"price": 800,
+<<<<<<< HEAD
 					"img": "🌊"
+=======
+					"img":"🥛"
+>>>>>>> a86ba743e71f82910eb4f79f3dfc726bf0fbe955
 				},
 				{
 					"item": "gaseosa 500",
 					"price": 700,
+<<<<<<< HEAD
 					"img": "🍹"
+=======
+					"img":""
+>>>>>>> a86ba743e71f82910eb4f79f3dfc726bf0fbe955
 				},
 				{
 					"item": "gaseosa 750",
