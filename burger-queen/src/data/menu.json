@@ -17,26 +17,36 @@
 				"price": 700
 			}
 		],
-    "lunch": [{
-			"hamburguers": {
-				"options": [
+    "lunch": {
+			"hamburgers": [
 					{
-						"item": "hamburguesa simple",
-						"price": 1500,
-						"types":[
-							"res",
-							"pollo",
-							"veggie"
-						]
+						"item": "hamburguesa simple res",
+						"price": 1500
+						
 					},
 					{
-						"item": "hamburguesa doble",
-						"price": 2500,
-						"types":[
-							"res",
-							"pollo",
-							"veggie"
-						]
+						"item": "hamburguesa simple pollo",
+						"price": 1500
+						
+					},
+					{
+						"item": "hamburguesa simple veggie",
+						"price": 1500
+						
+					},
+					{
+						"item": "hamburguesa doble res",
+						"price": 2500
+						
+					},
+					{
+						"item": "hamburguesa doble pollo",
+						"price": 2500
+						
+					},{
+						"item": "hamburguesa doble veggie",
+						"price": 2500
+						
 					}
 				],
 				"extras": [
@@ -49,7 +59,7 @@
 						"price": 500
 					}
 				]
-			},
+			,
 			"others": [
 				{
 					"item": "papas fritas",
@@ -79,6 +89,6 @@
 				}
 			]
 		}
-	]
+	
 	}
 }
