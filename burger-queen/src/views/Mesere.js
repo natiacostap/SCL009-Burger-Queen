@@ -16,7 +16,7 @@ class Mesere extends Component{
 							<Menu/>
 						</div>
 						<div className="col-12 col-md-6">
-							<List/>
+							<List list={this.state.list}/>
 						</div>
 					</div>
 				</div>
