@@ -14,12 +14,13 @@ class Mesere extends Component{
 			list:[]
 		}
 		this.addToList =this.addToList.bind(this)
+		this.handleRemove =this.handleRemove.bind(this)
 
 	}
 
-	addToList(item,price){
+	addToList(itemToList,priceToList,quantity){
 		this.setState({
-			list:this.state.list.concat([{item:item,price:price,quantity:1}])
+			list:this.state.list.concat([{item:itemToList,price:priceToList,quantity:1}])
 		})
 		
 	}
@@ -34,6 +35,14 @@ class Mesere extends Component{
 		this.setState({
 		showButton:false
 		})
+	}
+	handleRemove(event){
+		const filterToRemove = this.state.list.filter(list=> list !== event.target.value)
+		this.setState({list: filterToRemove
+			
+		})
+
+      
 	}
 	
 	render() {
