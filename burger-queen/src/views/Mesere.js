@@ -3,6 +3,7 @@ import List from '../components/List/Comp-list.jsx'
 import Navbar from '../components/Navbar/Comp-navbar.jsx'
 import Menu from '../components/Menu/Comp-menu.jsx';
 
+
 class Mesere extends Component{
 	render() {
 		return (
@@ -16,7 +17,7 @@ class Mesere extends Component{
 							<Menu/>
 						</div>
 						<div className="col-12 col-md-6">
-							<List list={this.state.list}/>
+							<List/>
 						</div>
 					</div>
 				</div>
