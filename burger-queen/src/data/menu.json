@@ -17,8 +17,13 @@
 				"price": 700
 			}
 		],
+<<<<<<< HEAD
     "lunch": {
 			"hamburgers": {
+=======
+    "lunch": [{
+			"hamburguers": {
+>>>>>>> fb775d18191993781b52f9d4f4978fa40a1f7c1c
 				"options": [
 					{
 						"item": "hamburguesa simple",
@@ -79,5 +84,6 @@
 				}
 			]
 		}
+	]
 	}
 }
