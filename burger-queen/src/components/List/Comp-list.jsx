@@ -24,7 +24,7 @@ class List extends Component {
             <div className="items-list">
               <table className="table table-borderless">
                 <tbody>
-                  {this.props.list.map(el=><Item name={el.item} price={el.price} count={el.quantity} handleRemove={this.props.handleRemove}/>)}
+                  {this.props.list.map(el=><Item name={el.item} price={el.price} count={el.quantity} deleteToFile={this.props.deleteToFile}/>)}
                 </tbody>
               </table>
             </div>

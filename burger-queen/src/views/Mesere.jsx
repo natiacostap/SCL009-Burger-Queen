@@ -14,7 +14,7 @@ class Mesere extends Component{
 			list:[]
 		}
 		this.addToList =this.addToList.bind(this)
-		this.handleRemove =this.handleRemove.bind(this)
+		this.deleteToFile =this.deleteToFile.bind(this)
 
 	}
 
@@ -36,14 +36,19 @@ class Mesere extends Component{
 		showButton:false
 		})
 	}
-	handleRemove(event){
-		const filterToRemove = this.state.list.filter(list=> list !== event.target.value)
-		this.setState({list: filterToRemove
+	deleteToFile(item){
+		
+		const data = this.state.list.filter(i => i.item !== item)
+    this.setState({data})
+		
+		
+		
 			
-		})
+		
 
       
-	}
+	
+}
 	
 	render() {
 		return (
