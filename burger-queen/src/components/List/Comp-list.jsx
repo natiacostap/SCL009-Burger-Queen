@@ -35,9 +35,17 @@ class List extends Component {
           </div>
           <div className="col-5">
             <h5 className="total-price">$ {this.props.total}</h5>
+            
           </div>
+          
         </div>
-      </div>
+        <div className="row ">
+          <div className="container-sendBtn">
+          <button className="enviarACocina  btn-lg ">Enviar a Cocina</button>
+        </div>
+        </div>
+        </div>
+      
     );
   }
 }

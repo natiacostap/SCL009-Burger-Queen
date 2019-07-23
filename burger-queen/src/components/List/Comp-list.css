@@ -53,3 +53,13 @@ div.items-list {
 div.name-container {
   background-color: #40B4E6;
 }
+.enviarACocina{
+  background-color: #C8117E;
+  color: #ffff;
+  margin-top: 10px;
+ 
+}
+.container-sendBtn{
+  align-items: right;
+
+}

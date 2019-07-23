@@ -3,9 +3,7 @@ import './Comp-item.css'
 
 //Creamos componente para lista de precios
 class Item extends Component {
-  constructor(props){
-    super(props)
-  }
+ 
   //Método render para mostrar en pantalla, retorna la interfaz (html)
   render() {
     return (
