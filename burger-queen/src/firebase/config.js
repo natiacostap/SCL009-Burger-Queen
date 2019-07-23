@@ -23,4 +23,5 @@ export const  ConfigFirebase = {
     appId: "1:506561367008:web:4efac5ba6f1cc021"
 
 };
+firebase.initializeApp(ConfigFirebase);
 
