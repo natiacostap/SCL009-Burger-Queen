@@ -19,7 +19,6 @@
 				"item": "Jugo natural",
 				"price": 700,
 				"img": "🍹"
-
 			}
 		],
     "lunch": {
@@ -28,37 +27,30 @@
 						"item": "Hamburguesa simple res",
 						"price": 1500,
 						"img": "🍔"
-						
 					},
 					{
 						"item": "Hamburguesa simple pollo",
 						"price": 1500,
 						"img": "🍔"
-
-						
 					},
 					{
 						"item": "Hamburguesa simple veggie",
 						"price": 1500,
-						"img": "🍔"
-						
+						"img": "🍔"	
 					},
 					{
 						"item": "Hamburguesa doble res",
 						"price": 2500,
 						"img": "🍔 🍔"
-						
 					},
 					{
 						"item": "Hamburguesa doble pollo",
 						"price": 2500,
 						"img": "🍔 🍔"
-						
 					},{
 						"item": "Hamburguesa doble veggie",
 						"price": 2500,
 						"img": "🍔 🍔"
-						
 					}
 				],
 				"extras": [

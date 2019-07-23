@@ -14,6 +14,7 @@ class Item extends Component {
           <td className="col-8 item-text">{this.props.name}</td>
           <td className="col-1 count-text">{this.props.quantity}</td>
           <td className="col-3"><button className="delete-btn" onClick={() => this.props.handleRemove(this.props.id)}type="button"><i className="fas fa-times"></i></button></td>
+
         </tr>
       </div>
     )
