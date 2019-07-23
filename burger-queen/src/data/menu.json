@@ -6,7 +6,7 @@
 				"img": "☕" 
 			},
 			{
-				"item": "Cafe con leche",
+				"item": "Café con leche",
 				"price": 700,
 				"img": "☕ + 🥛"
 			},
@@ -27,27 +27,32 @@
 					{
 						"item": "Hamburguesa simple res",
 						"price": 1500,
-						"img":"🍔"
+						"img": "🍔"
+						
 					},
 					{
 						"item": "Hamburguesa simple pollo",
 						"price": 1500,
-						"img": "🍔"						
+						"img": "🍔"
+
+						
 					},
 					{
 						"item": "Hamburguesa simple veggie",
 						"price": 1500,
 						"img": "🍔"
+						
 					},
 					{
 						"item": "Hamburguesa doble res",
 						"price": 2500,
 						"img": "🍔 🍔"
+						
 					},
 					{
 						"item": "Hamburguesa doble pollo",
 						"price": 2500,
-						"img":"🍔 🍔"
+						"img": "🍔 🍔"
 						
 					},{
 						"item": "Hamburguesa doble veggie",
@@ -85,17 +90,17 @@
 				{
 					"item": "Agua 500",
 					"price": 500,
-					"img":"🥛"
+					"img": "🥛"
 				},
 				{
 					"item": "Agua 750",
 					"price": 800,
-					"img":"🥛"
+					"img": "🥛"
 				},
 				{
 					"item": "Gaseosa 500",
 					"price": 700,
-					"img":"🥤"
+					"img": "🥤"
 				},
 				{
 					"item": "Gaseosa 750",
