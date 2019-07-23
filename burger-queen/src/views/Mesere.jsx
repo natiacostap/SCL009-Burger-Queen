@@ -4,7 +4,10 @@ import Navbar from '../components/Navbar/Comp-navbar.jsx'
 import OptionBreakfast from '../components/Breakfast/Comp-breakfast'
 import OptionsLunch from '../components/Lunch/Comp-lunch'
 import '../components/Menu/Comp-menu.css';
+import firebase from 'firebase';
 
+import {ConfigFirebase} from '../firebase/config.js';
+import 'firebase/database';
 
 class Mesere extends Component{
 	constructor(props){
@@ -17,8 +20,11 @@ class Mesere extends Component{
 		}
 		this.addToList =this.addToList.bind(this)
 		this.handleRemove =this.handleRemove.bind(this)
-
+		this.App = firebase.initializeApp(ConfigFirebase)
+	    this.db = this.App.database().ref().child('pedidos')
+		
 	}
+	
 
 	hideLunch() {
 		this.setState({
@@ -37,7 +43,7 @@ class Mesere extends Component{
 		let existsRepeated = false;
 
 		this.state.list.forEach(item => {
-			if(itemToList == item.item) {
+			if(itemToList === item.item) {
 				existsRepeated = true;
 			}
 		});
@@ -57,7 +63,7 @@ class Mesere extends Component{
 		else {
 			let price;
 			let updatedList = this.state.list.map(item => {
-				if(itemToList == item.item) {
+				if(itemToList === item.item) {
 					item.quantity++;
 					price = item.price;
 				}
@@ -78,7 +84,7 @@ class Mesere extends Component{
 		let price;
 
 		this.state.list.forEach(item => {
-			if(itemId == item.id) {
+			if(itemId === item.id) {
 				quantity = item.quantity;
 				price = item.price;
 			}
@@ -86,7 +92,7 @@ class Mesere extends Component{
 
 		if(quantity > 1){
 			let updatedList = this.state.list.map(item => {
-				if(itemId == item.id) {
+				if(itemId === item.id) {
 					item.quantity--;
 				}
 				return item;
@@ -97,7 +103,7 @@ class Mesere extends Component{
 				total: this.state.total - price
 			})
 		} else {
-			const filterToRemove = this.state.list.filter(item => item.id != itemId)
+			const filterToRemove = this.state.list.filter(item => item.id !== itemId)
 
 			this.setState({
 				list: filterToRemove,
