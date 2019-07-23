@@ -20,8 +20,8 @@ class Mesere extends Component{
 		}
 		this.addToList =this.addToList.bind(this)
 		this.handleRemove =this.handleRemove.bind(this)
-		this.App = firebase.initializeApp(ConfigFirebase)
-	    this.db = this.App.database().ref().child('pedidos')
+		//this.App = firebase.initializeApp(ConfigFirebase)
+	    this.db = firebase.database().ref().child('pedidos')
 		
 	}
 	
