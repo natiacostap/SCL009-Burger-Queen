@@ -13,7 +13,7 @@ class List extends Component {
             <i className="fas fa-user-alt client-icon"></i>
           </div>
           <div className="col-10 input-container">
-            <input className="input-name form-control" type="text" placeholder="Nombre del cliente"/>
+            <input className="input-name form-control" type="text" placeholder="Nombre del cliente" onChange={this.props.nameClient} value={this.props.client}/>
           </div>
         </div>
 
@@ -41,7 +41,7 @@ class List extends Component {
         </div>
         <div className="row ">
           <div className="container-sendBtn">
-          <button className="enviarACocina  btn-lg ">Enviar a Cocina</button>
+          <button className="enviarACocina  btn-lg "onClick={()=>this.props.saveFirestore()+console.log("hola")}>Enviar a Cocina</button>
         </div>
         </div>
         </div>
