@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import List from '../components/List/Comp-list.jsx'
 import Navbar from '../components/Navbar/Comp-navbar.jsx'
+
 import OptionBreakfast from '../components/Breakfast/Comp-breakfast'
 import OptionsLunch from '../components/Lunch/Comp-lunch'
 import '../components/Menu/Comp-menu.css';
-import firebase from 'firebase';
-
-import {ConfigFirebase} from '../firebase/config.js';
-import 'firebase/database';
+import {db} from '../firebase/config.js';
+import swal from '@sweetalert/with-react'
 
 class Mesere extends Component{
 	constructor(props){
@@ -17,11 +16,16 @@ class Mesere extends Component{
 			showButton: true,
 			list:[],
 			total: 0,
+			client:""
+			
+			
 		}
 		this.addToList =this.addToList.bind(this)
 		this.handleRemove =this.handleRemove.bind(this)
+		this.saveFirestore=this.saveFirestore.bind(this)
+		this.nameClient=this.nameClient.bind(this)
 		//this.App = firebase.initializeApp(ConfigFirebase)
-	    this.db = firebase.database().ref().child('pedidos')
+	    
 		
 	}
 	
@@ -38,7 +42,57 @@ class Mesere extends Component{
 		showButton:false
 		})
 	}
+	nameClient(e){
+		this.setState({
+			client:e.target.value
+		})
 
+	}
+	saveFirestore(){
+		if(this.state.client===""){
+			swal(<div className="alert">
+               <h2>Queride olvidaste algo ✌ </h2>
+			   <h3>Pon el nombre del client@</h3>
+			   <h4>y se feliz</h4>
+
+			</div>)
+		}
+		if(this.state.total===0){
+			swal(<div className="alert">
+               <h2>Queride olvidaste algo ✌ </h2>
+			   <h3>Agrega cosas a la lista</h3>
+			   <h4>y se feliz</h4>
+
+			</div>)
+			
+		}
+		else{
+		let idClient = "id"+Date.now();
+
+		let data={
+			
+			client:this.state.client,			
+			list:this.state.list,
+			total:this.state.total,
+			ready:false,
+			delivery:false,
+			time:Date.now()
+		}
+		db.collection("pedidos").doc(idClient).set(data)
+		.then(()=>{
+			this.clearList();
+		})
+	    }
+
+	}
+	clearList(){
+		this.setState({
+			list:[],
+			total:"",
+			client:""
+		})
+	}
+	
 	addToList(itemToList, priceToList) {
 		let existsRepeated = false;
 
@@ -133,7 +187,7 @@ class Mesere extends Component{
 					}
 				    </div>
 						<div className="col-12 col-md-6">
-							<List list={this.state.list} handleRemove={this.handleRemove} total={this.state.total}/>
+							<List list={this.state.list} handleRemove={this.handleRemove} total={this.state.total} saveFirestore={this.saveFirestore} nameClient={this.nameClient}client={this.state.client}/>
 						</div>
 				</div>	
 				</div>
