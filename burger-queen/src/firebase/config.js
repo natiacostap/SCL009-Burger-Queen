@@ -14,7 +14,7 @@ import firebase from 'firebase';
 // // Initialize Firebase
 // firebase.initializeApp(firebaseConfig);
 export const  ConfigFirebase = {
-  apiKey: "AIzaSyAgheQ4xflpK_Awn9LOTHY2JjRbfSGmvjQ",
+    apiKey: "AIzaSyAgheQ4xflpK_Awn9LOTHY2JjRbfSGmvjQ",
     authDomain: "burguer-queen-b451c.firebaseapp.com",
     databaseURL: "https://burguer-queen-b451c.firebaseio.com",
     projectId: "burguer-queen-b451c",
