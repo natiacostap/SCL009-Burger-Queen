@@ -51,26 +51,22 @@ class Mesere extends Component{
 	saveFirestore(){
 		if(this.state.client===""){
 			swal(<div className="alert">
-               <h2>Queride olvidaste algo ✌ </h2>
-			   <h3>Pon el nombre del client@</h3>
-			   <h4>y se feliz</h4>
-
+        <h2>Queride olvidaste algo ✌ </h2>
+			  <h3>Pon el nombre del client@</h3>
+			  <h4>y se feliz</h4>
 			</div>)
 		}
-		if(this.state.total===0){
+		else if(this.state.total===0){
 			swal(<div className="alert">
-               <h2>Queride olvidaste algo ✌ </h2>
-			   <h3>Agrega cosas a la lista</h3>
-			   <h4>y se feliz</h4>
-
+        <h2>Queride olvidaste algo ✌ </h2>
+			  <h3>Agrega cosas a la lista</h3>
+			  <h4>y se feliz</h4>
 			</div>)
-			
 		}
-		else{
+		else {
 		let idClient = "id"+Date.now();
 
-		let data={
-			
+		let data = {
 			client:this.state.client,			
 			list:this.state.list,
 			total:this.state.total,
@@ -79,17 +75,16 @@ class Mesere extends Component{
 			time:Date.now()
 		}
 		db.collection("pedidos").doc(idClient).set(data)
-		.then(()=>{
-			this.clearList();
-		})
-	    }
-
+			.then(() => {
+				this.clearList();
+			})
+	  }
 	}
 	clearList(){
 		this.setState({
 			list:[],
-			total:"",
-			client:""
+			total: 0,
+			client: ""
 		})
 	}
 	
@@ -181,14 +176,14 @@ class Mesere extends Component{
 					</div>
 					<div className="row">
 					<div className="col-12 col-md-6">
-					{
-						/**si es verdadero imprime optionbreakfast y si no lo es el de Lunch */
-						this.state.showButton ? <OptionBreakfast addToList={this.addToList} /> : <OptionsLunch addToList={this.addToList} />
-					}
-				    </div>
-						<div className="col-12 col-md-6">
-							<List list={this.state.list} handleRemove={this.handleRemove} total={this.state.total} saveFirestore={this.saveFirestore} nameClient={this.nameClient}client={this.state.client}/>
-						</div>
+						{
+							/**si es verdadero imprime optionbreakfast y si no lo es el de Lunch */
+							this.state.showButton ? <OptionBreakfast addToList={this.addToList}/> : <OptionsLunch addToList={this.addToList} />
+						}
+					</div>
+					<div className="col-12 col-md-6">
+						<List list={this.state.list} handleRemove={this.handleRemove} total={this.state.total} saveFirestore={this.saveFirestore} nameClient={this.nameClient} client={this.state.client}/>
+					</div>
 				</div>	
 				</div>
 			</div>

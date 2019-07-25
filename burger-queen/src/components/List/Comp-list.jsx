@@ -22,7 +22,7 @@ class List extends Component {
             <div className="items-list">
               <table className="table table-borderless">
                 <tbody>
-                  {this.props.list.map(el=><Item id={el.id} name={el.item}  quantity={el.quantity} handleRemove={this.props.handleRemove}/>)}
+                  {this.props.list.map(el => <Item id={el.id} name={el.item} quantity={el.quantity} handleRemove={this.props.handleRemove}/> )}
                 </tbody>
               </table>
             </div>
@@ -35,16 +35,15 @@ class List extends Component {
           </div>
           <div className="col-5">
             <h5 className="total-price">$ {this.props.total}</h5>
-            
           </div>
-          
         </div>
-        <div className="row ">
-          <div className="container-sendBtn">
-          <button className="enviarACocina  btn-lg "onClick={()=>this.props.saveFirestore()+console.log("hola")}>Enviar a Cocina</button>
+        
+        <div className="row container-sendBtn">
+          <div className="col-8 offset-4">
+            <button className="enviarACocina btn btn-lg "onClick={()=>this.props.saveFirestore()+console.log("hola")}>Enviar a Cocina</button>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
       
     );
   }

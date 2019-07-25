@@ -1,5 +1,5 @@
 div.list-container {
-  height: 500px;
+  height: 400px;
   color: #ffffff !important;
   background-color: #659CB4;
   border-radius: 20px;
@@ -45,7 +45,7 @@ h5.total-price {
   text-align: center;
 }
 div.items-list {
-  height: 330px;
+  height: 230px;
   overflow: auto;
   background-color: #659CB4;
   padding: 0px;
@@ -57,9 +57,15 @@ div.name-container {
   background-color: #C8117E;
   color: #ffff;
   margin-top: 10px;
- 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.enviarACocina:hover {
+  color: #ffffff;
+  background-color: #902A67;
 }
 .container-sendBtn{
-  align-items: right;
+  text-align: right;
+  margin-top: 60px;
+
 
 }
