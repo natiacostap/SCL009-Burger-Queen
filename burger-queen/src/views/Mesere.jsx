@@ -51,16 +51,16 @@ class Mesere extends Component{
 	saveFirestore(){
 		if(this.state.client===""){
 			swal(<div className="alert">
-        <h2>Queride olvidaste algo ✌ </h2>
-			  <h3>Pon el nombre del client@</h3>
-			  <h4>y se feliz</h4>
+              <h3>Queride, olvidaste algo <span role="img" aria-label="dedo-saludo">✌</span></h3>
+			  <h2>Ingresa nombre del cliente</h2>
+			  <h5>Pronto termina el turno  <span role="img" aria-label="guiño">😉</span></h5>
 			</div>)
 		}
 		else if(this.state.total===0){
 			swal(<div className="alert">
-        <h2>Queride olvidaste algo ✌ </h2>
-			  <h3>Agrega cosas a la lista</h3>
-			  <h4>y se feliz</h4>
+              <h3>Queride, olvidaste algo <span role="img" aria-label="dedo-saludo">✌</span></h3>
+			  <h2>Agrega items a la lista</h2>
+			  <h5>Pronto termina el turno  <span role="img" aria-label="guiño">😉</span></h5>
 			</div>)
 		}
 		else {
@@ -125,7 +125,7 @@ class Mesere extends Component{
 			})
 		}
 		
-		this.state.itemId++;
+		this.setState.itemId++;
 	}
 
 	handleRemove(itemId){

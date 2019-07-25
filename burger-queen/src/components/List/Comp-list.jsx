@@ -40,7 +40,7 @@ class List extends Component {
         
         <div className="row container-sendBtn">
           <div className="col-8 offset-4">
-            <button className="enviarACocina btn btn-lg "onClick={()=>this.props.saveFirestore()+console.log("hola")}>Enviar a Cocina</button>
+            <button className="enviarACocina btn btn-lg "onClick={()=>this.props.saveFirestore()}>Enviar a Cocina</button>
           </div>
         </div>
       </div>
