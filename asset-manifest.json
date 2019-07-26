@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SCL009-Burguer-Queen/static/css/main.75600a37.chunk.css",
-    "main.js": "/SCL009-Burguer-Queen/static/js/main.733b17ea.chunk.js",
-    "main.js.map": "/SCL009-Burguer-Queen/static/js/main.733b17ea.chunk.js.map",
-    "runtime~main.js": "/SCL009-Burguer-Queen/static/js/runtime~main.7a13f7bd.js",
-    "runtime~main.js.map": "/SCL009-Burguer-Queen/static/js/runtime~main.7a13f7bd.js.map",
-    "static/js/2.ecc03e40.chunk.js": "/SCL009-Burguer-Queen/static/js/2.ecc03e40.chunk.js",
-    "static/js/2.ecc03e40.chunk.js.map": "/SCL009-Burguer-Queen/static/js/2.ecc03e40.chunk.js.map",
-    "index.html": "/SCL009-Burguer-Queen/index.html",
-    "precache-manifest.d071f80f233e01efd9f7529030867985.js": "/SCL009-Burguer-Queen/precache-manifest.d071f80f233e01efd9f7529030867985.js",
-    "service-worker.js": "/SCL009-Burguer-Queen/service-worker.js",
-    "static/css/main.75600a37.chunk.css.map": "/SCL009-Burguer-Queen/static/css/main.75600a37.chunk.css.map"
+    "main.css": "/SCL009-Burguer-Queen/burger-queen/static/css/main.75600a37.chunk.css",
+    "main.js": "/SCL009-Burguer-Queen/burger-queen/static/js/main.7d99bf85.chunk.js",
+    "main.js.map": "/SCL009-Burguer-Queen/burger-queen/static/js/main.7d99bf85.chunk.js.map",
+    "runtime~main.js": "/SCL009-Burguer-Queen/burger-queen/static/js/runtime~main.aa1b69b4.js",
+    "runtime~main.js.map": "/SCL009-Burguer-Queen/burger-queen/static/js/runtime~main.aa1b69b4.js.map",
+    "static/js/2.d3783a5f.chunk.js": "/SCL009-Burguer-Queen/burger-queen/static/js/2.d3783a5f.chunk.js",
+    "static/js/2.d3783a5f.chunk.js.map": "/SCL009-Burguer-Queen/burger-queen/static/js/2.d3783a5f.chunk.js.map",
+    "index.html": "/SCL009-Burguer-Queen/burger-queen/index.html",
+    "precache-manifest.7c7d24ae86a44013bf4e99552838fd64.js": "/SCL009-Burguer-Queen/burger-queen/precache-manifest.7c7d24ae86a44013bf4e99552838fd64.js",
+    "service-worker.js": "/SCL009-Burguer-Queen/burger-queen/service-worker.js",
+    "static/css/main.75600a37.chunk.css.map": "/SCL009-Burguer-Queen/burger-queen/static/css/main.75600a37.chunk.css.map"
   }
 }
