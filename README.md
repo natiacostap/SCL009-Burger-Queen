@@ -8,7 +8,7 @@ interfaz donde puedan tomar pedidos usando una tablet.
 
 ![burger-queen](https://i.ibb.co/ZM7jZn2/Logo-1.png)
 
-Visita nuestra aplicación en el siguiente link: [buger-queen](https://burguer-queen-b451c.firebaseapp.com/SCL009-Burger-Queen/)
+Visita nuestra aplicación en el siguiente link: [Burger-Queer](https://burguer-queen-b451c.firebaseapp.com/SCL009-Burger-Queen/)
 
 Como punto de partida,
 nos comparten el siguiente correo recibido del cliente:
