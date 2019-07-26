@@ -85,80 +85,109 @@ class Mesere extends Component {
 			client: ""
 		})
 	}
-	//Función par añadir un elemento a la lista
-	addToList(itemToList, priceToList) {
-		let existsRepeated = false;
-		//Totamos items repetidos
-		this.state.list.forEach(item => {
+
+
+//Función par añadir un elemento a la lista
+
+addToList(itemToList, priceToList) {
+
+	let existsRepeated = false;
+
+	//Totamos items repetidos
+
+	this.state.list.forEach(item => {
+
 			if(itemToList === item.item) {
-				existsRepeated = true;
+
+					existsRepeated = true;
+
 			}
-		});
-		//Si no encuentra item repetido, se añade a la lista en una nueva línea
-		if(!existsRepeated) {
+
+	});
+
+	//Si no encuentra item repetido, se añade a la lista en una nueva línea
+
+	if(!existsRepeated) {
+
 			this.setState({
-				list: this.state.list.concat([{
-					id: this.state.itemId,
-					item: itemToList,
-					price: priceToList, 
-					quantity: 1
-				}]),
-				total: this.state.total + priceToList
+
+					list: this.state.list.concat([{
+
+							id: this.state.itemId,
+
+							item: itemToList,
+
+							price: priceToList, 
+
+							quantity: 1
+
+					}]),
+
+					total: this.state.total + priceToList
+
 			})
-		}
-		//Si encuentra item repetido se actualiza el item anterior en la lista
-		else {
+
+	}
+
+	//Si encuentra item repetido se actualiza el item anterior en la lista
+
+	else {
 			let price;
 			let updatedList = this.state.list.map(item => {
-				if(itemToList === item.item) {
-					item.quantity++;
-					price = item.price;
-				}
-				return item;
+					if(itemToList === item.item) {
+							item.quantity++;
+							price = item.price;
+					}
+					return item;
 			});
 			this.setState({
-				list: updatedList,
-				total: this.state.total + price
+					list: updatedList,
+					total: this.state.total + price
 			})
-		}
-		//Generador de Id único por item agregado
-		this.setState.itemId++;
 	}
-	//Función para borrar item de la lista
-	handleRemove(itemId){
-		let quantity;
-		let price;
-		//Recorremos lista para encontrar item a borrar
-		this.state.list.forEach(item => {
+	this.state.itemId++;
+}
+
+//Función para borrar item de la lista
+handleRemove(itemId){
+	let quantity;
+	let price;
+	//Recorremos lista para encontrar item a borrar
+	this.state.list.forEach(item => {
 			if(itemId === item.id) {
-				quantity = item.quantity;
-				price = item.price;
+					quantity = item.quantity;
+					price = item.price;
 			}
-		})
-		//Si existe más de uno se restará 1 a la cantidad
-		if(quantity > 1){
+	})
+
+	//Si existe más de uno se restará 1 a la cantidad
+	if(quantity > 1){
 			let updatedList = this.state.list.map(item => {
-				if(itemId === item.id) {
-					item.quantity--;
-				}
-				return item;
+					if(itemId === item.id) {
+						item.quantity--;
+					}
+					return item;
 			});
+
 			//Se toma lista actualizada y se descuenta el precio del item repetido en el total
 			this.setState({
-				list: updatedList,
-				total: this.state.total - price
+					list: updatedList,
+					total: this.state.total - price
 			})
-		}
-		else {
+	}
+
+	else {
 			//Borra item único de la lista y le resta el precio al total
 			const filterToRemove = this.state.list.filter(item => item.id !== itemId)
 			this.setState({
-				list: filterToRemove,
-				total: this.state.total - price
+					list: filterToRemove,
+					total: this.state.total - price
+
 			})
-		}
+
 	}
-	
+
+}
 	render() {
 		return (
 			<div className="mesereView"> 
