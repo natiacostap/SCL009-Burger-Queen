@@ -1,4 +1,4 @@
-# Burger Queen
+# Burger Queer
 
 ## Preámbulo
 
@@ -6,7 +6,7 @@ Nos acaban de enviar un correo con una solicitud para un nuevo proyecto. Hay un
 restaurante que nos ha contactado porque quieren que alguien les construya una
 interfaz donde puedan tomar pedidos usando una tablet.
 
-![burger-queen](https://user-images.githubusercontent.com/110297/42118136-996b4a52-7bc6-11e8-8a03-ada078754715.jpg)
+![burger-queen](https://i.ibb.co/ZM7jZn2/Logo-1.png)
 
 Como punto de partida,
 nos comparten el siguiente correo recibido del cliente:
@@ -85,62 +85,6 @@ agregar y la interfaz debe ir mostrando el _resumen del pedido_ con el total.
 
 ![out](https://user-images.githubusercontent.com/110297/45984241-b8b51c00-c025-11e8-8fa4-a390016bee9d.gif)
 
-## Objetivos
-
-El objetivo principal de aprendizaje de este proyecto es construir una
-_interfaz web_ usando el _framework_ elegido (React, Vue o Angular). Todos estos
-frameworks de front-end atacan el mismo problema: **cómo mantener la interfaz y
-el estado sincronizados**. Así que esta experiencia espera familiarizarse con
-el concepto de _estado de pantalla_, y cómo cada cambio sobre el estado se va a
-ir reflejando en la interfaz (por ejemplo, cada vez que agregamos un _producto_
-a un _pedido_, la interfaz debe actualizar la lista del pedido y el total).
-
-Como objetivo secundario, la implementación debe además seguir las
-recomendaciones para PWAs (_Progressive Web Apps_), lo cual incluye conceptos
-como **offline**. Para guiarte con respecto a este tema te recomendamos usar
-[Lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=es), que es
-una herramienta de Google que nos ayuda a asegurar que nuestras web apps sigan
-buenas prácticas. De hecho, usaremos Lighthouse a la hora de evaluar el
-proyecto.
-
-Finalmente, la interfaz debe estar diseñada específicamente para correr en
-**tablets**.
-
-Tópicos: _react_, _angular_, _vue_, _pwa_, _offline-first_, _service-worker_.
-
-## Consideraciones generales
-
-Este proyecto se debe "resolver" den grupos de 3 estudiantes.
-
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6+), HTML y CSS y empaquetada de manera automatizada.
-En este proyecto SI está permitido usar librerías o frameworks
-(debes elegir entre [React](https://reactjs.org/) o
-[Angular](https://angular.io/)).
-
-La aplicación debe ser un _Single Page App_. Los pedidos los tomaremos desde una
-_tablet_, pero **no queremos una app nativa**, sino una web app que sea
-**responsive** y pueda funcionar **offline**. También necesitamos botones
-grandes para escoger los productos, y el estado actual del pedido siempre
-visible para poder confirmar con el cliente.
-
-La aplicación desplegada debe tener 80% o más el las puntuaciones de
-Performance, Progressive Web App, Accessibility y Best Practices de Lighthouse.
-
-La aplicación debe hacer uso de `npm-scripts` y contar con scripts `start`,
-`test`, `build` y `deploy`, que se encarguen de arrancar, correr las pruebas,
-empaquetar y desplegar la aplicación respectivamente.
-
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_,
-_lines_ y _branches_.
-
-Por otro lado, la parte de la interfaz no está incluida, por lo cual, deberás de
-definir la estructura de carpetas y archivos que consideres necesaria, puedes
-guiarte de las convenciones del framework elegido. Por ende, los tests y el
-setup necesario para ejecutarlos serán realizados por ti.
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio.
 
 ## Criterios de aceptación del proyecto
 
@@ -202,78 +146,35 @@ se vaya feliz con su comida.
   * Haces test unitarios y has testeado tu producto por tu cuenta
   * Desplegaste tu aplicación y has etiquetado tu versión desplegada (git tag)
 
-## Primeros pasos
+## Desarrollo del proyecto
 
-1. Haz un _fork_ de este repo (en GitHub).
+### Planificación
 
-2. Clona tu _fork_ en tu computadora:
+Para planificar el proyecto y organizar el desarrollo en historias de usuario se hizo uso de la plataforma Trello. También se utilizó la aplicación Whatsapp como medio clave de comunicación.
 
-   ```sh
-   git clone git@github.com:<tu-usuario-de-github>/<cohortid>-burger-queen.git
-   cd <cohortid>-burger-queen
-   ```
+Visita nuestra planificación en este enlace:
+[Trello](https://trello.com/b/Le6vEfkH/burguer-queen)
 
-3. Crea una rama a partir de `master` para empezar a trabajar. Por ejemplo:
+### Ideación de estilo
 
-   ```sh
-   git checkout -b develop
-   ```
+Se dio inicio al proyecto estructurando sus partes y componentes. Conocer lo que sería necesario para desarrollarlo fue la mejor forma de partir. De esta forma se creó un boceto de baja fidelidad que fue testeado por personas externas al proyecto y posteriormente se utilizó la plataforma Figma para iterar el diseño.
 
-4. Crear proyecto en [Firebase](https://firebase.google.com/)
 
-5. Habilitar Firestore (_comenzar en modo bloqueado_) en sección de "Bases de
-   Datos" de [Firebase console](https://console.firebase.google.com/).
+![burger-queen](https://i.ibb.co/qnVrvLh/figma.png)
 
-6. Instalar utilidad de línea de comando de Firebase:
 
-   ```sh
-   npm i -g firebase-tools
-   ```
+Visita nuestro proyecto realizado en Figma en este enlace:
+[Figma](https://www.figma.com/file/cyuiUZD7lesEkbjCtSqeL2Dn/Burger-Queen?node-id=0%3A1)
 
-7. Agregamos entorno de producción para desplegar:
 
-   ```sh
-   firebase use --add
-   ```
+#### Paleta de colores:
 
-9. Desplegar:
+La paleta de colores que utilizamos fue la siguiente:
 
-   ```sh
-   firebase deploy
-   ```
 
-10. Llegado a este punto ya puedes comenzar con el _front-end_ :wink:
+![burger-queen](https://i.ibb.co/S3D8fD3/PALETA.png)
 
-***
 
-## Pistas / Tips
+#### Tipografía:
 
-### Frameworks / libraries
-
-* [React](https://reactjs.org/)
-* [Angular](https://angular.io/)
-
-### Herramientas
-
-* [npm-scripts](https://docs.npmjs.com/misc/scripts)
-* [Babel](https://babeljs.io/)
-* [webpack](https://webpack.js.org/)
-
-### PWA
-
-* [Tu primera Progressive Web App - Google developers](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/?hl=es)
-* [Progressive Web Apps - codigofacilito.com](https://codigofacilito.com/articulos/progressive-apps)
-* [offlinefirst.org](http://offlinefirst.org/)
-* [Usando Service Workers - MDN](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API/Using_Service_Workers)
-* [Cómo habilitar datos sin conexión - Firebase Docs](https://firebase.google.com/docs/firestore/manage-data/enable-offline?hl=es-419)
-
-### Serverless
-
-* [Qué es eso de serverless? - @PamRucinque en Medium](https://medium.com/@PamRucinque/qu%C3%A9-es-eso-de-serverless-f4f6c8949b87)
-* [Qué es Serverless? | FooBar - YouTube](https://www.youtube.com/watch?v=_SYHUpLi-2U)
-* [Firebase](https://firebase.google.com/)
-* [Serverless Architectures - Martin Fowler](https://www.martinfowler.com/articles/serverless.html)
-
-### Cloud functions
-
-* [Cloud functions - Firebase Docs](https://firebase.google.com/docs/functions/?hl=es-419)
+Se escogió Roboto como la tipografía ya que es de fácil lectura y para la creación del Logo se hizo uso de Lobster.
